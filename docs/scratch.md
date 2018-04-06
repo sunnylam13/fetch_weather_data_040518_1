@@ -110,3 +110,37 @@ drop `{country code}`
 
 	api.openweathermap.org/data/2.5/forecast?q={city name}
 
+## Friday, April 6, 2018 10:15 AM
+
+Forgot that you have to sign up for the Free plan first in order to use the API call...
+
+Info on using your API key...
+
+	http://openweathermap.org/appid
+
+created a separate key for fetch weather program
+
+max 60 calls an hour
+
+### How to use API key in API call
+
+Description:
+To get access to weather API you need an API key whatever account you chose from Free to Enterprise.
+
+Activation of an API key for Free and Startup plans takes 10 minutes. For other tariff plans it is 10 to 60 minutes.
+
+We keep right to not to process API requests without API key.
+
+### API call:
+
+	http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID={APIKEY}
+
+Parameters:
+
+APPID {APIKEY} is your unique API key 
+
+Example of API call:
+
+api.openweathermap.org/data/2.5/forecast?id=524901&APPID=1111111111 
+
+

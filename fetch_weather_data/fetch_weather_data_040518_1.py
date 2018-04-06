@@ -35,7 +35,13 @@ logging.debug("Location extracted from command line is:  %s" % (location) )
 
 # download JSON data from API
 
-url = 'api.openweathermap.org/data/2.5/forecast?q=%s' % (location)
+api_key = "94152b1259ca814187842e32fea8151d"
+logging.debug("API key is:  %s" % (api_key) )
+
+api_addition = "&APPID=" + api_key
+logging.debug("API addition to URL is:  %s" % (api_addition) )
+
+url = 'http://api.openweathermap.org/data/2.5/forecast?q=%s' % (location)
 logging.debug("URL to use is:  %s" % (url) )
 
 response = requests.get(url) # returns a response object
