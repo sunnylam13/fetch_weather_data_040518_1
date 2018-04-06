@@ -77,7 +77,17 @@ weatherData = json.loads(response.text)
 w = weatherData['list']
 
 print('Current weather in %s:  ' % (location) )
-print(w[0])
+print(w[0]['weather'][0]['main'] + ' - ' + w[0]['weather'][0]['description'])
+
+print() # a space
+
+print('Tomorrow:  ')
+print(w[1]['weather'][0]['main'] + ' - ' + w[1]['weather'][0]['description'])
+
+print() # a space
+
+print('Day after tomorrow:  ')
+print(w[2]['weather'][0]['main'] + ' - ' + w[2]['weather'][0]['description'])
 
 #####################################
 # END DATA PROCESSING
