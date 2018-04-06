@@ -76,6 +76,9 @@ weatherData = json.loads(response.text)
 
 w = weatherData['list']
 
+print('Current weather in %s:  ' % (location) )
+print(w[0])
+
 #####################################
 # END DATA PROCESSING
 #####################################

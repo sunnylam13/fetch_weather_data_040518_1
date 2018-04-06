@@ -172,6 +172,16 @@ weather descriptions we want are after `main` and `description`
 
 Example data downloaded for Toronto...
 
+must analyze data to determine what is
+
+* current weather
+
+* tomorrow weather
+
+* day after weather
+
+----------------
+
 	{'city': {'coord': {'lat': 43.654, 'lon': -79.3873},
 	          'country': 'CA',
 	          'id': 6167865,
@@ -940,6 +950,8 @@ Example data downloaded for Toronto...
 	                        'main': 'Clouds'}],
 	           'wind': {'deg': 237.503, 'speed': 5.36}}],
 	 'message': 0.0043}
+
+-------------------
 
 
 
