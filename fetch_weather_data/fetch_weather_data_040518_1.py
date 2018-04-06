@@ -22,17 +22,34 @@ if len(sys.argv) < 2:  # error check that location provided
 	sys.exit()
 
 location = ' '.join(sys.argv[1:])
+logging.debug("Location extracted from command line is:  %s" % (location) )
 
 #####################################
 # END COMMAND LINE PROCESSING
 #####################################
 
+
 #####################################
-# DATA PROCESSING
+# GET DATA
 #####################################
 
 # download JSON data from API
 
+url = 'api.openweathermap.org/data/2.5/forecast?q=%s' % (location)
+logging.debug("URL to use is:  %s" % (url) )
+
+response = requests.get(url) # returns a response object
+logging.debug("Response status is:  ")
+logging.debug(response.raise_for_status()) # check status
+
+#####################################
+# END GET DATA
+#####################################
+
+
+#####################################
+# DATA PROCESSING
+#####################################
 
 # load JSON data into a Python variable
 
