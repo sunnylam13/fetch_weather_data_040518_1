@@ -953,5 +953,15 @@ must analyze data to determine what is
 
 -------------------
 
+## Friday, April 6, 2018 5:39 PM
+
+Ideas for similar programs
+
+* collect weather forecasts for several camp sites or hike trails to see which have the best weather
+
+* schedule a program to regularly check weather and send you a frost alert if you need to move your plants indoors
+
+* pull weather data from many sites to show all at once or calculate and show the average of the multiple weather predictions
+
 
 
